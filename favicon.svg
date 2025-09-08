@@ -1,0 +1,33 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 
+      A base é um hexágono, representando a estrutura e a geometria sagrada.
+      A cor é o verde do teu app, a cor da energia, do "ganho".
+    -->
+    <path 
+      d="M50 2.5 L93.3 26.25 V 73.75 L50 97.5 L6.7 73.75 V 26.25 L50 2.5Z" 
+      stroke="#2ecc71" 
+      stroke-width="4"
+    />
+    
+    <!-- 
+      Linhas internas que lembram tanto um circuito eletrônico quanto um padrão tribal,
+      se conectando no centro, o ponto da transcendência.
+    -->
+    <path d="M50 20 V 35" stroke="#2ecc71" stroke-width="2"/>
+    <path d="M28 32 L 40 40" stroke="#2ecc71" stroke-width="2"/>
+    <path d="M72 32 L 60 40" stroke="#2ecc71" stroke-width="2"/>
+    
+    <!-- 
+      O núcleo: um círculo representando o "olho" da consciência cósmica, o centro da expansão.
+      A cor é o branco do teu texto, um ponto de luz na escuridão do fundo.
+    -->
+    <circle cx="50" cy="50" r="12" stroke="#EAEAEA" stroke-width="2"/>
+    <circle cx="50" cy="50" r="4" fill="#EAEAEA"/>
+
+    <!-- 
+      Linhas de energia saindo do núcleo, a expansão do som e da consciência.
+    -->
+    <path d="M50 65 V 80" stroke="#2ecc71" stroke-width="2"/>
+    <path d="M28 68 L 40 60" stroke="#2ecc71" stroke-width="2"/>
+    <path d="M72 68 L 60 60" stroke="#2ecc71" stroke-width="2"/>
+</svg>
