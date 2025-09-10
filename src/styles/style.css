@@ -1,0 +1,70 @@
+@keyframes float-balloon {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.hero-img {
+    animation: float-balloon 5s ease-in-out infinite;
+}
+
+.nav-link, .navbar-brand {
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.nav-link::after, .navbar-brand::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-acao, #007BFF);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after  {
+    width: 80%;
+}
+
+.navbar-brand:hover::after {
+    width: 100%;
+}
+
+.card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+}
+
+/* Efeito moderno nos botões */
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px); /* Eleva o botão levemente */
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3); /* Adiciona uma sombra azul suave */
+}
+
+.btn:active {
+    transform: translateY(0); /* Remove a elevação ao clicar */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Reduz a sombra ao clicar */
+}
