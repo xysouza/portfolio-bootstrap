@@ -6,70 +6,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adriano Oliveira - Desenvolvedor</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="shortcut icon" href="./src/styles/style.css" type="image/x-icon">
-  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<body class="bg-dark text-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
     <div class="container">
-      <a class="navbar-brand" href="#">Adriano Oliveira</a>
+      <a class="navbar-brand font-weight-bold" href="#">Adriano Oliveira</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mim</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="nav-link text-light-hover" href="#sobre">Sobre mim</a></li>
+          <li class="nav-item"><a class="nav-link text-light-hover" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link text-light-hover" href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="hero text-center bg-dark text-light py-5 mt-5" id="sobre">
-    <div class="container">
-      <img src="./src/image/minhaFoto.jpg" alt="Minha foto" class="img-fluid mb-4 rounded-circle hero-img mt-3">
-      <h1 class="display-4">Salve! Sou Adriano Oliveira 👨‍💻</h1>
-      <p class="lead">Desenvolvedor focado em criar soluções simples, bonitas e funcionais.</p>
-      <a class="btn btn-primary btn-lg" href="#projetos" role="button">Ver projetos</a>
+  <header class="hero text-center bg-dark text-light py-5 pt-md-0 d-flex flex-column justify-content-center align-items-center" id="sobre" style="min-height: 100vh;">
+    <div class="container mt-5">
+      <img src="./src/image/minhaFoto.jpg" alt="Minha foto" class="img-fluid mb-4 rounded-circle hero-img border-0 shadow-lg" style="width: 180px; height: 180px; object-fit: cover;">
+      <h1 class="display-4 font-weight-bold">Salve! Sou Adriano Oliveira <span class="text-primary">👨‍💻</span></h1>
+      <p class="lead">Desenvolvedor focado em criar soluções <strong>simples, bonitas e funcionais.</strong></p>
+      <a class="btn btn-outline-light btn-lg mt-3" href="#projetos" role="button"><i class="fas fa-rocket mr-2 float-anim"></i>Ver projetos</a>
     </div>
   </header>
 
-  <section id="projetos" class="py-5">
+  <section id="projetos" class="py-5 bg-dark">
     <div class="container">
-      <h2 class="text-center mb-5">Meus Projetos 🚀</h2>
+      <h2 class="text-center mb-5 h1 font-weight-bold">Meus Projetos <span class="text-warning float-anim">🚀</span></h2>
       <div class="row">
         <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
+          <div class="card h-100 bg-secondary text-light border-0 shadow-lg">
             <img class="card-img-top" src="./src/image/projeto3.png" alt="Imagem do App Meu Corre">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">App Meu Corre</h5>
-              <p class="card-text">App em React Native e Expo para autônomos gerenciarem suas finanças diárias.</p>
-              <a href="https://github.com/xysouza/meu-corre-app" target="_blank" class="btn btn-primary mt-auto">Ver no GitHub</a>
+              <h5 class="card-title font-weight-bold">App Meu Corre</h5>
+              <div class="mt-2 mb-3">
+                <span class="badge badge-info p-2 mr-1">React Native</span>
+                <span class="badge badge-light p-2 mr-1">Expo</span>
+                <span class="badge badge-success p-2 mr-1">AsyncStorage</span>
+              </div>
+              <p class="card-text flex-grow-1">App em React Native e Expo para autônomos gerenciarem suas finanças diárias.</p>
+              <a href="#" class="btn btn-outline-light mt-auto" data-toggle="modal" data-target="#projetoModalMeuCorre"><i class="fas fa-eye mr-2"></i>Ver mais</a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top" src="./src/image/projeto1.png" alt="Imagem do Projeto 1">
+          <div class="card h-100 bg-secondary text-light border-0 shadow-lg">
+            <img class="card-img-top" src="./src/image/projeto1.png" alt="Imagem do Delivery - ODS 12">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Delivery alinhado à ODS 12</h5>
-              <p class="card-text">Painel admin responsivo (HTML, CSS, JS, PHP) com bot de WhatsApp em Python.</p>
-              <a href="#" class="btn btn-outline-primary mt-auto">Ver mais</a>
+              <h5 class="card-title font-weight-bold">Delivery - ODS 12</h5>
+              <div class="mt-2 mb-3">
+                <span class="badge badge-info p-2 mr-1">PHP</span>
+                <span class="badge badge-success p-2 mr-1">Python</span>
+                <span class="badge badge-warning p-2 mr-1">JavaScript</span>
+              </div>
+              <p class="card-text flex-grow-1">Painel admin responsivo (HTML, CSS, JS, PHP) com bot de WhatsApp em Python.</p>
+              <a href="#" class="btn btn-outline-light mt-auto" data-toggle="modal" data-target="#projetoModal1"><i class="fas fa-eye mr-2"></i>Ver mais</a>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100">
-            <img class="card-img-top" src="./src/image/projeto2.png" alt="Imagem do Projeto 2">
+          <div class="card h-100 bg-secondary text-light border-0 shadow-lg">
+            <img class="card-img-top" src="./src/image/projeto2.png" alt="Imagem do Agendamento de Consultas SUS">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Agendamento de Consultas SUS</h5>
-              <p class="card-text">Site responsivo para otimizar consultas e reduzir filas nos postos de saúde (ODS 3).</p>
-              <a href="#" class="btn btn-outline-primary mt-auto">Ver mais</a>
+              <h5 class="card-title font-weight-bold">Agendamento de Consultas SUS</h5>
+              <div class="mt-2 mb-3">
+                <span class="badge badge-warning p-2 mr-1">JavaScript</span>
+                <span class="badge badge-info p-2 mr-1">PHP</span>
+                <span class="badge badge-primary p-2 mr-1">CSS</span>
+              </div>
+              <p class="card-text flex-grow-1">Site responsivo para otimizar consultas e reduzir filas nos postos de saúde (ODS 3).</p>
+              <a href="#" class="btn btn-outline-light mt-auto" data-toggle="modal" data-target="#projetoModal2"><i class="fas fa-eye mr-2"></i>Ver mais</a>
             </div>
           </div>
         </div>
@@ -77,23 +93,144 @@
     </div>
   </section>
 
-  <section id="contato" class="container my-5">
-    <h2 class="text-center mb-5">Bora trocar uma ideia! 🤙</h2>
+  <section id="contato" class="container my-5 bg-dark text-light py-5">
+    <h2 class="text-center mb-5 h1 font-weight-bold">Bora trocar uma ideia! <span class="text-info">🤙</span></h2>
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <form>
-          <div class="form-group"><input type="text" class="form-control" placeholder="Teu nome"></div>
-          <div class="form-group"><input type="email" class="form-control" placeholder="Teu e-mail"></div>
-          <div class="form-group"><textarea class="form-control" rows="5" placeholder="Digite sua mensagem"></textarea></div>
-          <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar Mensagem</button>
+        <form class="p-4 border rounded shadow-lg bg-secondary">
+          <div class="form-group">
+            <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="Teu nome">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Teu e-mail">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control bg-dark text-light border-secondary" rows="5" placeholder="Digite sua mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block mt-4"><i class="fas fa-paper-plane mr-2"></i>Enviar Mensagem</button>
         </form>
       </div>
     </div>
   </section>
 
-  <footer class="text-center py-4 bg-dark text-light">
-    <p class="mb-0">&copy; 2024 - Feito por Adriano Oliveira.</p>
+  <footer class="text-center py-4 bg-dark text-light border-top border-secondary">
+    <p class="mb-0">&copy; 2024 - Feito por Adriano Oliveira</p>
   </footer>
+
+  <div class="modal fade" id="projetoModal1" tabindex="-1" role="dialog" aria-labelledby="projetoModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-dark text-light border border-secondary">
+        <div class="modal-header border-bottom border-secondary">
+          <h5 class="modal-title font-weight-bold" id="projetoModal1Label"><i class="fas fa-truck text-success mr-2"></i>Delivery - ODS 12</h5>
+          <button type="button" class="close text-light" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./src/image/projeto1.png" alt="Imagem do Projeto 1" class="img-fluid mb-4 rounded shadow-lg rounded-1">
+          <h6 class="font-weight-bold text-warning">Descrição</h6>
+          <p class="text-muted">Sistema de delivery focado na sustentabilidade, alinhado com o Objetivo de Desenvolvimento Sustentável 12 da ONU (Consumo e Produção Responsáveis).</p>
+          
+          <h6 class="font-weight-bold text-warning mt-4">Tecnologias utilizadas</h6>
+          <div>
+            <span class="badge badge-primary p-2 mr-2 mb-2">HTML</span>
+            <span class="badge badge-primary p-2 mr-2 mb-2">CSS</span>
+            <span class="badge badge-primary p-2 mr-2 mb-2">JavaScript</span>
+            <span class="badge badge-info p-2 mr-2 mb-2">PHP</span>
+            <span class="badge badge-success p-2 mr-2 mb-2">Python (Bot WhatsApp)</span>
+            <span class="badge badge-secondary p-2 mr-2 mb-2">MySQL</span>
+          </div>
+          
+          <h6 class="font-weight-bold text-warning mt-4">Principais funcionalidades</h6>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Painel de Controle 100% Responsivo</li>
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Gestão de Pedidos Instantânea e em Tempo Real</li>
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Influência de Hábitos Saudáveis com Dicas Inteligentes</li>
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Atendimento Automatizado 24/7 via Chatbot no WhatsApp</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-top border-secondary">
+         <!-- <a href="#" class="btn btn-outline-light"><i class="fas fa-external-link-alt mr-2"></i>Ver demonstração</a> -->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projetoModal2" tabindex="-1" role="dialog" aria-labelledby="projetoModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-dark text-light border border-secondary">
+        <div class="modal-header border-bottom border-secondary">
+          <h5 class="modal-title font-weight-bold" id="projetoModal2Label"><i class="fas fa-hospital-alt text-danger mr-2"></i>Agendamento de Consultas SUS</h5>
+          <button type="button" class="close text-light" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./src/image/projeto2.png" alt="Imagem do Projeto 2" class="img-fluid mb-4 rounded shadow-lg rounded-1">
+          <h6 class="font-weight-bold text-warning">Descrição</h6>
+          <p class="text-muted">Plataforma de agendamento de consultas para o Sistema Único de Saúde (SUS), desenvolvida para reduzir filas e otimizar o atendimento em postos de saúde, alinhada ao ODS 3 (Saúde e Bem-estar).</p>
+          
+          <h6 class="font-weight-bold text-warning mt-4">Tecnologias utilizadas</h6>
+          <div>
+            <span class="badge badge-primary p-2 mr-2 mb-2">HTML</span>
+            <span class="badge badge-primary p-2 mr-2 mb-2">CSS</span>
+            <span class="badge badge-primary p-2 mr-2 mb-2">JavaScript</span>
+            <span class="badge badge-success p-2 mr-2 mb-2">PHP</span>
+          </div>
+          
+          <h6 class="font-weight-bold text-warning mt-4">Principais funcionalidades</h6>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Agendamento online de consultas</li>
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Notificações por SMS</li>
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Painel para profissionais de saúde</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-top border-secondary">
+          <!-- <a href="#" class="btn btn-outline-light"><i class="fas fa-external-link-alt mr-2"></i>Ver demonstração</a> -->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projetoModalMeuCorre" tabindex="-1" role="dialog" aria-labelledby="projetoModalMeuCorreLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-dark text-light border border-secondary">
+        <div class="modal-header border-bottom border-secondary">
+          <h5 class="modal-title font-weight-bold" id="projetoModalMeuCorreLabel"><i class="fas fa-mobile-alt text-primary mr-2"></i>App Meu Corre</h5>
+          <button type="button" class="close text-light" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./src/image/projeto3.png" alt="Preview App Meu Corre" class="img-fluid mb-4 rounded shadow-lg modal-img-mobile rounded-1">
+          <h6 class="font-weight-bold text-warning">Descrição</h6>
+          <p class="text-muted">Aplicativo mobile para trabalhadores autônomos registrarem ganhos e gastos do dia, tendo visão rápida do saldo e histórico semanal.</p>
+
+          <h6 class="font-weight-bold text-warning mt-4">Tecnologias utilizadas</h6>
+          <div>
+            <span class="badge badge-primary p-2 mr-2 mb-2">React Native + Expo</span>
+            <span class="badge badge-secondary p-2 mr-2 mb-2">AsyncStorage</span>
+            <span class="badge badge-success p-2 mr-2 mb-2">Styled Components / StyleSheet</span>
+          </div>
+
+          <h6 class="font-weight-bold text-warning mt-4">Principais funcionalidades</h6>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Registro rápido de ganhos e despesas</li>
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Cálculo automático de saldo diário</li>
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Listagem com histórico recente</li>
+            <li><i class="fas fa-check-circle text-success mr-2"></i>Persistência local offline</li>
+          </ul>
+
+        </div>
+        <div class="modal-footer border-top border-secondary">
+          <a href="https://github.com/xysouza/meu-corre-app" target="_blank" class="btn btn-outline-light"><i class="fab fa-github mr-2"></i>Repositório</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

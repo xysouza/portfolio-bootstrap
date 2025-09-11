@@ -10,8 +10,26 @@
     }
 }
 
+@keyframes float-small {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .hero-img {
     animation: float-balloon 5s ease-in-out infinite;
+}
+
+.float-anim {
+  animation: float-small 5s ease-in-out infinite;
+  display: inline-block;
+  will-change: transform;
 }
 
 .nav-link, .navbar-brand {
@@ -54,17 +72,46 @@
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
 }
 
-/* Efeito moderno nos botões */
 .btn {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
-    transform: translateY(-3px); /* Eleva o botão levemente */
-    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3); /* Adiciona uma sombra azul suave */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3); 
 }
 
 .btn:active {
-    transform: translateY(0); /* Remove a elevação ao clicar */
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Reduz a sombra ao clicar */
+    transform: translateY(0); 
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); 
+}
+
+.modal-img-mobile {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-light-hover:hover {
+  color: #cccccc !important; 
+  transition: color 0.2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem; 
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .h1, h1 {
+    font-size: 1.8rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
 }
